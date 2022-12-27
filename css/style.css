@@ -154,12 +154,6 @@ main .seccion__clinica{
     height: auto;
 }
 
-.seccion__clinica h2{
-    background: -webkit-linear-gradient(rgb(180, 79, 79),rgb(185, 20, 20), rgb(60, 60, 197),rgb(11, 11, 63));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 .seccion__clinica button{
     margin-top: 20px;
     margin-right: 35px;

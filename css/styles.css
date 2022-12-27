@@ -1,0 +1,436 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+h1{
+    font-size: 1.5rem;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+ul{
+    list-style: none;
+    text-align: right;
+    background-color: lightblue;
+
+}
+
+ul li{
+    display: inline-block;
+    margin: auto;
+    padding: 10px;
+
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+ul li img{
+    margin-left: 4px;
+    width: 25px;
+    border-radius: 10px;
+}
+
+header a:hover{
+    font-weight: bold;
+    color: grey;
+    padding: 10px;
+}
+
+.borde:hover{
+    border-top: 3px solid rgb(36, 106, 129);
+}
+
+header div{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+header img{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 60px;
+    
+}
+
+
+header p{
+    font-weight: bold;
+}
+
+.first_botton{
+    margin: 5px 2px;
+    font-weight: bold;
+    float:right;
+}
+
+
+#somosSmile{
+    margin: 20px;
+    border-radius: 20px;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+        ,url(../assets/images/instrumentos.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+
+
+#somosSmile .container{
+    color: white;
+    text-align: center;
+    padding: 200px 12px;
+
+}
+
+
+#nuestros-servicios{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#nuestros-servicios .container{
+    padding: 70px 12px;
+    display: inline-block;
+    align-items: center;
+}
+
+#nuestros-servicios h2{
+    font-size: 2rem;
+    margin-top: 0;
+    color:lightseagreen
+}
+
+#nuestros-servicios p{
+    display: none;
+}
+
+.carta{
+    width:70vh;
+}
+
+.carta__primera{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+        ,url(../assets/images/bracket-tratamiento.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center center;
+    padding: 50px;
+    margin-bottom: 10px;
+}
+
+.carta__Segunda{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+        ,url(../assets/images/blanqueamiento.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding:50px;
+    margin-bottom: 10px;
+}
+
+.carta__tercera{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+        ,url(../assets/images/dientes.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding:50px;
+    background-position-y:bottom
+}
+
+#nuestros-servicios button{
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 12px;
+    border-radius: 15px;
+    border: 2px;
+    box-shadow: 2px 2px 10px black;
+    background-color: lightblue;
+}
+
+#nuestros-servicios button:hover{
+    background-color: lightseagreen;
+    padding: 10px;
+    border: 2px solid rgba(0,0,0,0.3);
+}
+
+footer{
+    margin-top: 30px;
+}
+
+footer .container p{
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content:right;
+    font-size: 0.8rem;
+}
+
+footer img{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+
+footer li{
+    display: flex;
+    flex-direction:row;
+    justify-content: right;
+    margin-right: 20px;
+}
+
+footer .datosClinica{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8rem;
+    overflow: hidden;
+}
+/*-------------------contacto----------------------------*/
+
+#rellenoForm{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+        ,url(../assets/images/paciente2.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 120vh;
+}
+.formulario{
+    display: inline-block;
+    position: relative;
+    align-items: center;
+    top: 130px;
+    left: 430px;
+    margin: 40px;
+    color: white;
+    font-weight: bold;
+}
+
+
+.formulario__alineado-uno{
+    margin-left: 3.5vh;
+}
+
+.formulario__alineado-dos{
+    margin-left: 20.5vh;
+}
+
+.formulario__alineado-tres{
+    margin-left: 3.2vh;
+}
+
+/*-------------------Nuestra clinica------------------------*/
+
+#clinica {
+    display: inline-block;
+    position: sticky;
+    left: 10vh;
+    padding: 80px 50px 80px 50px;
+    background-color: rgb(189, 231, 229);
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+#clinica img{
+    width: 350px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 50px;
+}
+
+#clinica img:hover{
+    border: 3px solid lightseagreen;
+    box-shadow: 10px 10px 10px  black;
+}
+
+#nuestra-clinica{
+    text-align: center;
+    margin-bottom: 30vh;
+}
+
+#nuestra-clinica iframe{
+    margin-top: 10vh;
+    border: 5px solid lightskyblue;
+}
+
+/*---------SERVICIOS----------*/
+
+.caja1{
+    background-color: rgb(171, 223, 220);
+    width: 350px;
+    height: 350px;
+    margin: 10px;
+    border: 2px solid lightseagreen;
+    border-radius: 5px;
+}
+
+.caja2{
+    background-color: rgb(171, 223, 220);
+    width: 350px;
+    height: 350px;
+    margin: 10px;
+    border: 2px solid lightseagreen;
+    border-radius: 5px;
+}
+
+.caja3{
+    background-color: rgb(171, 223, 220);
+    width: 350px;
+    height: 350px;
+    margin: 10px;
+    border: 2px solid lightseagreen;
+    border-radius: 5px;
+}
+
+.caja4{
+    background-color: rgb(171, 223, 220);
+    width: 350px;
+    height: 350px;
+    margin: 10px;
+    border: 2px solid lightseagreen;
+    border-radius: 5px;
+}
+
+.caja5{
+    background-color: rgb(171, 223, 220);
+    width: 350px;
+    height: 350px;
+    margin: 10px;
+    border: 2px solid lightseagreen;
+    border-radius: 5px;
+}
+
+.caja6{
+    background-color: rgb(171, 223, 220);
+    width: 350px;
+    height: 350px;
+    margin: 10px;
+    border: 2px solid lightseagreen;
+    border-radius: 5px;
+}
+
+#cajasPrimerTrio{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 13vh;
+    margin-left: 5vh;
+    margin-right: 5vh;
+    margin-bottom: 2vh;
+    text-align: center;
+}
+
+
+#cajasSegundoTrio{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 13vh;
+    margin-left: 5vh;
+    margin-right: 5vh;
+    margin-bottom: 30vh;
+
+}
+
+.tituloServicios{
+    text-align: center;
+}
+
+
+/* IniciarSesion */
+
+
+.iniciar_sesion{
+    display: inline-block;
+    position: relative;
+    align-items: center;
+    top: 30px;
+    left: 480px;
+    margin: 20px;
+}
+
+
+.iniciar_sesion__alineado-uno{
+    margin-left: 8.4vh;
+}
+
+.iniciar_sesion__alineado-dos{
+    margin-left: 1.9vh;
+    margin-bottom: 2vh;
+}
+
+
+
+#tituloRegistro{
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.registrarse{
+    display: inline-block;
+    position: relative;
+    align-items: center;
+    left: 470px;
+}
+
+.registrarse__alineado-1{
+    margin-left: 5.5vh;
+}
+
+.registrarse__alineado-2{
+    margin-left: 20.6vh;
+}
+
+.registrarse__alineado-3{
+    margin-left: 1vh;
+}
+
+.registrarse__alineado-4{
+    margin-left: 8.3vh;
+}

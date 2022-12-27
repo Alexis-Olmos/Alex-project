@@ -10,7 +10,7 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* --------------------------------HOME---------------------------------- */
+/* __________________________________HOME_________________________________________*/
 
 .contenedor{
     width: 100%;
@@ -31,7 +31,7 @@ body{
 
 /* --------header---------- */
 .contenedor .header{
-    background: #333;
+    background: rgb(66, 66, 66);
     grid-area: header;
 }
 
@@ -47,39 +47,15 @@ body{
 
 .logo-titulo h2{
     color: white;
-    font-size: 2em;
+    font-family: Hoefler Text,Baskerville Old Face,Garamond,Times New Roman,serif; 
+    font-size: 3em;
     margin-top: 15px;
     margin-left: 10px;
-/* ----animacion-titulo---- */
-    animation-name: cambiarColor;
-    animation-duration: 1s;
 }
-@keyframes cambiarColor{
-    0%{
-        color: rgb(190, 31, 31) ;
-    }
-
-    25%{
-        color: rgb(75, 9, 9);
-    }
-
-    50%{
-        color: rgb(11, 21, 109);
-    }
-
-    75%{
-        color: rgb(67, 82, 223);
-    }
-    100%{
-        color: rgb(149, 151, 175);
-    }
-}
-
 
 .logo-titulo img{
     width: 60px;
 }
-
 
 nav ul{
     list-style-type: none;
@@ -93,6 +69,7 @@ nav ul li{
 }
 
 nav ul li a{
+    font-family: Hoefler Text,Baskerville Old Face,Garamond,Times New Roman,serif; 
     font-size: 1.3em;
     text-decoration: none;
     color: white;
@@ -123,6 +100,8 @@ header a:hover{
 main .contenido{
     grid-area: cont;
 }
+
+/* ---------seccion smile--------- */
 
 .contenido{
     height: 70vh;
@@ -175,6 +154,12 @@ main .seccion__clinica{
     height: auto;
 }
 
+.seccion__clinica h2{
+    background: -webkit-linear-gradient(rgb(180, 79, 79),rgb(185, 20, 20), rgb(60, 60, 197),rgb(11, 11, 63));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .seccion__clinica button{
     margin-top: 20px;
     margin-right: 35px;
@@ -204,7 +189,7 @@ main .seccion__clinica--imagen{
     border-radius: 30px;
 }
 
-/* ------------aside servicios--------- */
+/* --------------aside servicios----------- */
 #nuestros-servicios{
     background-color: rgb(30, 30, 30);
     color: white;
@@ -291,7 +276,7 @@ main .seccion__clinica--imagen{
     border: 2px solid rgba(0,0,0,0.3);
 }
 
-/* -----------footer----------------- */
+/* --------------footer----------------- */
 footer{
     margin-top: 100px;
     grid-area: footer ;
@@ -326,7 +311,7 @@ footer .datosClinica{
     align-items: center;
 }
 
-/*-------------------contacto----------------------------*/
+/*____________________________contacto______________________________________*/
 
 #rellenoForm{
     background-image: linear-gradient(
@@ -366,7 +351,7 @@ footer .datosClinica{
     margin-left: 3vh;
 }
 
-/*-------------------Nuestra clinica------------------------*/
+/*_____________________________________Nuestra clinica____________________________*/
 
 #clinica {
     display: inline-block;
@@ -401,7 +386,7 @@ footer .datosClinica{
     border: 5px solid lightskyblue;
 }
 
-/*---------SERVICIOS----------*/
+/*_____________________________SERVICIOS__________________________*/
 
 .caja1{
     background-color: rgb(171, 223, 220);
@@ -484,26 +469,7 @@ footer .datosClinica{
     text-align: center;
 }
 
-/* --------------obra social------------- */
-
-/* .contenedor__obra-social{
-    width: 100%;
-    max-width: 1400px;
-    height: 100%;
-    margin:auto;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(4,auto);
-
-    grid-template-areas: 
-    "mutual mutual asideObraS"
-    "mutual2 mutual2 asideObraS"
-    "pago pago pago"
-    "medios medios medios"
-    ;
-} */
-
-/* /!/ */
+/* ___________________________obra social____________________________ */
 .contenedor__obra-social{
     width: 100%;
     max-width: 1400px;
@@ -521,7 +487,34 @@ footer .datosClinica{
     "medios medios medios"
     ;
 }
-/* /!/ */
+/* ---animacion h2 "obras sociales"----- */
+.mutuales__primeras h2{
+    animation-name: cambiarColor;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cambiarColor{
+    0%{
+        color: rgb(212, 111, 111) ;
+    }
+
+    25%{
+        color: rgb(190, 31, 31);
+    }
+
+    50%{
+        color: rgb(75, 9, 9);
+    }
+
+    75%{
+        color: rgb(42, 53, 148);
+    }
+    100%{
+        color: rgb(212, 111, 111);
+    }
+}
+
 .contenedor__obra-social .mutuales__primeras{
     grid-area: mutual;
     text-align: center;
@@ -535,7 +528,6 @@ footer .datosClinica{
     align-items: center;
     justify-content: space-around;
 }
-
 
 .contenedor__obra-social .publicidad{
     grid-area: asideObraS ;
@@ -551,6 +543,27 @@ footer .datosClinica{
 
 .contenedor__obra-social .mutuales__segundas{
     grid-area: mutual2;
+}
+
+.mutuales__primeras img{
+    transition-duration: 1s;
+    transition-delay: 0.3s;
+}
+
+.mutuales__segundas img{
+    transition-duration: 1s;
+    transition-delay: 0.3s;
+}
+
+.mutuales__primeras img:hover{
+    transform: scale(1.2);
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px  black;
+}
+.mutuales__segundas img:hover{
+    transform: scale(1.2);
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px  black;
 }
 
 .mutuales__segundas div {
@@ -578,13 +591,12 @@ footer .datosClinica{
     height: auto;
 }
 
-
+/* ---------seccion medios de pagos------------- */
 .contenedor__obra-social .pago{
     grid-area: pago;
 }
 
 .pago h2{
-    margin-top: 50px;
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
@@ -632,25 +644,18 @@ footer .datosClinica{
     grid-area: tercero;
 }
 
+.wave{
+    margin-top: 100px;
+}
 
-/* -------------media queries---------- */
-
-
+/* ___________________________media queries___________________________*/
 /* desktop first */
-@media screen and (max-width:1400px){
-
-}
-
-@media screen and (max-width: 1200px) {
-
-}
 
 @media screen and (max-width: 1024px) {
     nav ul li{
         display: inline-block;
         padding: 10px;
-        margin: auto;
-        
+        margin: auto;    
     }
 
     .contenedor main{
@@ -704,7 +709,7 @@ footer .datosClinica{
         align-items: center;
     }
 
-/* -----mediaqueries obra social----------- */
+/* ---------mediaqueries obra social----------- */
     .contenedor__obra-social{
         grid-area: main;
         display: grid;
@@ -723,7 +728,6 @@ footer .datosClinica{
         display: none;
     }
 
-/* --------------- */
     .contenedor__obra-social .medios__pago{
         grid-area: medios;
         display: grid;
@@ -767,7 +771,6 @@ footer .datosClinica{
 
 @media screen and (max-width: 480px) {
 
-
     footer  p{
         font-size: 0.8em;
         display: flex;
@@ -782,7 +785,6 @@ footer .datosClinica{
         height: 15px;
     }
     
-    
     footer li{
         display: flex;
         flex-direction:row;
@@ -790,7 +792,4 @@ footer .datosClinica{
         margin-right: 10px;
     }
  
-}
-@media screen and (max-width: 320px) {
-     
 }

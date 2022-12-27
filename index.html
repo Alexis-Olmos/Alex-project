@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- animation.style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!--animation aos (scroll)  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- css -->
     <link rel="stylesheet" href="./css/style.css">
-
     <title>SMILE CLINICA DENTAL</title>
 </head>
 
@@ -14,16 +17,16 @@
     <div class="contenedor">
         <header class="header">
             <div class="logo-titulo">
-                <img src="./assets/images/logo_consul.png" alt="logo consultorio" >
+                <img class="animate__animated animate__backInUp" src="./assets/images/logo_consul.png" alt="logo consultorio" >
                 <h2>Smile clinica dental</h2>
             </div>
             <nav>
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./pages/obras_sociales.html">Obras sociales</a></li>
-                    <li><a href="./pages/servicios.html">Servicios</a></li>
-                    <li><a href="./pages/nustra_clinica.html">Nuestra clinica</a></li>
-                    <li><a href="./pages/contacto.html">Contacto</a></li>
+                <ul class="animate__animated animate__zoomIn">
+                    <li><a class="borde" href="./index.html">Home</a></li>
+                    <li><a class="borde" href="./pages/obras_sociales.html">Obras sociales</a></li>
+                    <li><a class="borde" href="./pages/servicios.html">Servicios</a></li>
+                    <li><a class="borde" href="./pages/nustra_clinica.html">Nuestra clinica</a></li>
+                    <li><a class="borde" href="./pages/contacto.html">Contacto</a></li>
                 </ul>
             </nav>
         </header>
@@ -41,7 +44,7 @@
 
             <section class="seccion__clinica" >
                 <h2>Clínica SMILE</h2>
-                <div>
+                <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                     <p>
                             Nos definimos como un centro de excelencia odontológica
                             por nuestro gran equipo de profesionales odontólogos,
@@ -80,7 +83,7 @@
 
         <aside id="nuestros-servicios">
 
-            <h2>NUESTROS SEVICIOS</h2>
+            <h2 data-aos="fade-up" data-aos-duration="3000">NUESTROS SEVICIOS</h2>
             <div class="carta">
                 <div class="carta__primera">
                     <h3>ORTODONCIA</h3>
@@ -109,7 +112,7 @@
         </aside>
 
         <footer>
-            <div class="datosClinica ">
+            <div data-aos="zoom-in" class="datosClinica ">
                 <p>Dirección:Av. Meeks 71, 1º piso, Lomas de Zamora,Bs As, Argentina</p><br>
                 <p>telefono:(011) 4292 - 3574 / 4245 - 2901 / 2747</p><br>
                 <p>Horarios:Lunes a viernes de 10:00 a 18:00 hs</p><br>
@@ -131,6 +134,11 @@
                 <p>&copy;Clinica dental smile 2022 - Aviso Legal - Política de privacidad</p>
             </div>
         </footer>
-    </div>   
+    </div> 
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+    </script>
 </body>
 </html>

@@ -4,132 +4,155 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
+    <meta name="description" content="En Smile recibimos todas las obras sociales y contamos con distintas formas de pago y opciones de financiacion para su tratamiento dental.">
+    <meta name="keywords" content="swiss medical, iosfa, sancor salud, consulmed, omint, osmecon, medios de pago">
+    <link rel="icon" type="image/png" href="./assets/icons/favicon/medical-assistance (1).png" sizes="32x32">
+    <!-- fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
     <!-- animation.style -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!--animation aos (scroll)  -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- font awesome grepper icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"  rel="stylesheet" />
     <!-- css -->
-    <link rel="stylesheet" href="../css/style.css">
-    <title>CLINICA DENTAL SMILE</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>OBRAS SOCIALES</title>
 </head>
+
 <body>
+
     <div class="contenedor">
-        <header class="header">
-            <div class="logo-titulo">
-                <img src="../assets/images/logo_consul.png" alt="logo consultorio" >
-                <h2>Smile clinica dental</h2>
-            </div>
-            <nav>
-                <ul>
-                    <li><a class="borde" href="../index.html">Home</a></li>
-                    <li><a class="borde" href="./obras_sociales.html">Obras sociales</a></li>
-                    <li><a class="borde" href="./servicios.html">Servicios</a></li>
-                    <li><a class="borde" href="./nustra_clinica.html">Nuestra clinica</a></li>
-                    <li><a class="borde" href="./contacto.html">Contacto</a></li>
+        <header>
+            <nav >
+                <!-- logo de la pagina -->
+                <a href="../index.html" class="logo">
+                    <img src="../assets/icons/medical-assistance.svg" alt="logo-consultorio">
+                    <h1 class="titulo">SMILE CLINICA DENTAL</h1>
+                </a>
+                <!-- checkbox para menu desplegable de celular -->
+                <label for="check" class="nav__label">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <input type="checkbox" id="check" class="nav__input" placeholder="#">
+                <!-- paguinas del nav -->
+                <ul class="nav__menu">
+                    <li><a href="../index.html" class="nav__item">Home</a></li>
+                    <li><a href="servicios.html" class="nav__item">Servicios</a></li>
+                    <li><a href="obras_sociales.html" class="nav__item">Obras Sociales</a></li>
+                    <li><a href="nustra_clinica.html" class="nav__item">Nuestra Clinica</a></li>
+                    <li><a href="contacto.html" class="nav__item">Contacto</a></li>
                 </ul>
             </nav>
         </header>
-    </div>
 
-    <main class="contenedor__obra-social">
-        <section class="mutuales__primeras">
-            <h2>Obras sociales</h2>
-            <div>
-                <img src="../assets/images/logo_swiss-removebg-preview.png" alt="logo_swiss" width="200">
-                <img src="../assets/images/sancor.png" alt="logo_sancor" width="200">
-                <img src="../assets/images/consulmed-removebg-preview.png" alt="logo_consulmed" width="200">
-            </div>
-        </section>
-
-        <section class="mutuales__segundas">
-            <div>
-                <img class="omint" src="../assets/images/Logo-Omint-Saude-e-Seguros-removebg-preview.png" alt="Logo-Omint">
-                <img class="iosfa" src="../assets/images/iosfa.png" alt="logo_iosfa">
-                <img class="osmecon" src="../assets/images/osmecon-removebg-preview.png" alt="logo_osmecon">
-            </div>
-        </section>
-
-        <aside class="publicidad">
-            <img src="../assets/images/img-obra-social.jpg" alt="foto_paciente">
-        </aside>
-
-        <section class="pago">
-            <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#333" fill-opacity="1" d="M0,192L26.7,197.3C53.3,203,107,213,160,202.7C213.3,192,267,160,320,144C373.3,128,427,128,480,128C533.3,128,587,128,640,133.3C693.3,139,747,149,800,160C853.3,171,907,181,960,192C1013.3,203,1067,213,1120,224C1173.3,235,1227,245,1280,224C1333.3,203,1387,149,1413,122.7L1440,96L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"></path></svg>
-            <div>
-                <h2 data-aos="fade-up">MEDIOS DE PAGO</h2>
-                <p>
-                    En caso de no contar con cobertura medica o tratamientos no cubiertos, tenemos distintas
-                </p>
-                <p>formas de pago y opciones de financiacion para su tratamiento dental.</p>
-            </div>
-        </section>
-        
-        <section class="medios__pago">
-            <div class="primer__par">
+        <main class="main_ObS">
+            <!-- mutuales -->
+            <section class="mutuales__primeras">
+                <h2>Obras sociales</h2>
                 <div>
-                    <img src="../assets/images/efectivo-removebg-preview (1).png" alt="img efectivo" width="43">
-                    <p>Efectivo</p>
+                    <img class="l-swis" src="../assets/icons/logo_swiss-removebg-preview.svg" alt="logo_swiss">
+                    <img class="l-sanc" src="../assets/icons/sancor.svg" alt="logo_sancor">
+                    <img class="l-consulm" src="../assets/icons/consulmed-removebg-preview.svg" alt="logo_consulmed">
                 </div>
-
+            </section>
+    
+            <section class="mutuales__segundas">
                 <div>
-                    <img src="../assets/images/Mastercard-removebg-preview.png" alt="img Mastercard" width="50">
-                    <p>Tarjeta de credito mastercad</p>
+                    <img class="omint" src="../assets/icons/Logo-Omint-Saude-e-Seguros-removebg-preview.svg" alt="Logo-Omint" >
+                    <img class="iosfa" src="../assets/icons/iosfa.svg" alt="logo_iosfa">
+                    <img class="osmecon" src="../assets/icons/osmecon-removebg-preview.svg" alt="logo_osmecon">
                 </div>
-            </div>
+            </section>
 
-            <div class="segundo__par">
-                <div>
-                    <img src="../assets/images/debito-removebg-preview.png" alt="img debito" width="70">
-                    <p>Debito</p>
-                </div>
-                <div>
-                    <img src="../assets/images/visa-removebg-preview.png" alt="img visa" width="50">
-                    <p>Tarjeta de credito visa</p>
-                </div>
-            </div>
+            <!-- imagen paciente (publicidad) -->
+            <aside class="publicidad">
+                <img src="../assets/images/img-obra-social.webp" alt="foto_paciente" width="200">
+            </aside>
 
-            <div class="tercer__par">
-                <div>
-                    <img src="../assets/images/mercado-pago-removebg-preview.png" alt="mercado-pago" width="100">
-                    <p>Mercado pago</p>
+            <!-- medios de pago -->
+            <section class="pago">
+            <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(0, 0, 0, 0.10)" fill-opacity="1" d="M0,192L26.7,197.3C53.3,203,107,213,160,202.7C213.3,192,267,160,320,144C373.3,128,427,128,480,128C533.3,128,587,128,640,133.3C693.3,139,747,149,800,160C853.3,171,907,181,960,192C1013.3,203,1067,213,1120,224C1173.3,235,1227,245,1280,224C1333.3,203,1387,149,1413,122.7L1440,96L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"></path></svg>
+                <div data-aos="zoom-out">
+                    <h2>MEDIOS DE PAGO</h2>
+                    <p>
+                        En caso de no contar con cobertura medica o tratamientos no cubiertos, tenemos distintas
+                    </p>
+                    <p>formas de pago y opciones de financiacion para su tratamiento dental.</p>
                 </div>
-                <div>
-                    <img src="../assets/images/transferencia-removebg-preview.png" alt="img transferencia" width="90">
-                    <p>Transferencia bancaria</p>
+            </section>
+            
+            <section class="medios__pago">
+                <div class="primer__par" data-aos="flip-left">
+                    <div>
+                        <img src="../assets/icons/efectivo.svg" alt="img efectivo" width="38">
+                        <p>Efectivo</p>
+                    </div>
+    
+                    <div>
+                        <img src="../assets/icons/Mastercard-removebg-preview.svg" alt="img Mastercard" width="50">
+                        <p>Tarjeta de credito mastercad</p>
+                    </div>
                 </div>
-            </div>
-        </section>
-    </main>
+    
+                <div class="segundo__par" data-aos="flip-left">
+                    <div>
+                        <img src="../assets/icons/debito-removebg-preview.svg" alt="img debito" width="70">
+                        <p>Debito</p>
+                    </div>
+                    <div>
+                        <img src="../assets/icons/visa.svg" alt="img visa" width="50">
+                        <p>Tarjeta de credito visa</p>
+                    </div>
+                </div>
+    
+                <div class="tercer__par" data-aos="flip-left">
+                    <div>
+                        <img src="../assets/icons/mercado-pago-removebg-preview.svg" alt="mercado-pago" width="100">
+                        <p>Mercado pago</p>
+                    </div>
+                    <div>
+                        <img src="../assets/icons/transferencia-removebg-preview.svg" alt="img transferencia" width="90">
+                        <p>Transferencia bancaria</p>
+                    </div>
+                </div><br><br>
+            </section>
+        </main>
 
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#333" fill-opacity="1" d="M0,192L26.7,197.3C53.3,203,107,213,160,202.7C213.3,192,267,160,320,144C373.3,128,427,128,480,128C533.3,128,587,128,640,133.3C693.3,139,747,149,800,160C853.3,171,907,181,960,192C1013.3,203,1067,213,1120,224C1173.3,235,1227,245,1280,224C1333.3,203,1387,149,1413,122.7L1440,96L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>
-
-    <div class="contenedor">
         <footer>
-            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="datosClinica ">
+            <div class="datosClinica" data-aos="fade-up" data-aos-duration="3000">
                 <p>Dirección:Av. Meeks 71, 1º piso, Lomas de Zamora,Bs As, Argentina</p><br>
                 <p>telefono:(011) 4292 - 3574 / 4245 - 2901 / 2747</p><br>
                 <p>Horarios:Lunes a viernes de 10:00 a 18:00 hs</p><br>
                 <p>Mail:recepcion@odontologiail.com.ar</p><br>
             </div>
-            <div>
-                <li>
-                    <a href="https://www.facebook.com/clinicasmilepuntadeleste" target="_blank">
-                        <img src="../assets/images/logoface-removebg-preview.png" alt="logoFace">
-                    </a>
-                    <a href="https://www.instagram.com/smile_clinica_dental/" target="_blank">
-                        <img src="../assets/images/logo_insta-removebg-preview.png" alt="logoInsta">
-                    </a>
-                    <a href="https://twitter.com/OrtodonciaSMILE" target="_blank">
-                        <img src="../assets/images/twitter-667462_1920.png" alt="logoTw">
-                    </a>
-                </li>
-                <p>&copy;Clinica dental smile 2022 - Aviso Legal - Política de privacidad</p>
+            <!-- redes sociales -->
+            <div class="redes_S">
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/clinicasmilepuntadeleste" rel="noopener" target="_blank">
+                            <img src="../assets/icons/facebook.svg" alt="logoFace">
+                        </a>
+                        <a href="https://www.instagram.com/smile_clinica_dental/" rel="noopener" target="_blank">
+                            <img src="../assets/icons/insta.svg" alt="logoInsta">
+                        </a>
+                        <a href="https://twitter.com/OrtodonciaSMILE" rel="noopener" target="_blank">
+                            <img src="../assets/icons/tw.svg" alt="logoTw">
+                        </a>
+                    </li>
+                </ul>
             </div>
+            <p class="copyR">&copy;Clinica dental smile 2022 - Aviso Legal - Política de privacidad</p>
         </footer>
     </div>
+
+
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-    AOS.init();
-    </script>
+AOS.init();
+</script>
 </body>
 </html>

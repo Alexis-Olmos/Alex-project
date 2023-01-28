@@ -4,35 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
+    <meta name="description" content="SMILE CLINICA DENTAL somos una clinica que ofrecemos todas las especialidades odontologicas en la ciudad de BS AS. Recibimos todas las obras sociales">
+    <meta name="keywords" content="CLINICA DENTAL,BS AS, SERVICIOS, OBRAS SOCIALES">
+    <link rel="icon" type="image/png" href="./assets/icons/favicon/medical-assistance (1).png" sizes="32x32">
+    <!-- fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
     <!-- animation.style -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!--animation aos (scroll)  -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- font awesome grepper icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"  rel="stylesheet" />
     <!-- css -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/estilo.css">
     <title>SMILE CLINICA DENTAL</title>
 </head>
 
 <body>
+
     <div class="contenedor">
-        <header class="header">
-            <div class="logo-titulo">
-                <img class="animate__animated animate__backInUp" src="./assets/images/logo_consul.png" alt="logo consultorio" >
-                <h2>Smile clinica dental</h2>
-            </div>
+        <header class="headerHome">
             <nav>
-                <ul class="animate__animated animate__zoomIn">
-                    <li><a class="borde" href="./index.html">Home</a></li>
-                    <li><a class="borde" href="./pages/obras_sociales.html">Obras sociales</a></li>
-                    <li><a class="borde" href="./pages/servicios.html">Servicios</a></li>
-                    <li><a class="borde" href="./pages/nustra_clinica.html">Nuestra clinica</a></li>
-                    <li><a class="borde" href="./pages/contacto.html">Contacto</a></li>
+                <!-- logo de la pagina -->
+                <a href="./index.html" class="logo">
+                    <img src="./assets/icons/medical-assistance.svg" alt="logo-consultorio">
+                    <h1 class="titulo">SMILE CLINICA DENTAL</h1>
+                </a>
+                <!-- checkbox para menu desplegable de celular -->
+                <label for="menu" class="nav__label">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <input type="checkbox" id="menu" class="nav__input" placeholder="#">
+                <!-- paguinas del nav -->
+                <ul class="nav__menu">
+                    <li><a href="./index.html" class="nav__item">Home</a></li>
+                    <li><a href="./pages/servicios.html" class="nav__item">Servicios</a></li>
+                    <li><a href="./pages/obras_sociales.html" class="nav__item">Obras Sociales</a></li>
+                    <li><a href="./pages/nustra_clinica.html" class="nav__item">Nuestra Clinica</a></li>
+                    <li><a href="./pages/contacto.html" class="nav__item">Contacto</a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
-            <section class="contenido">
+            <!-- seccion smile portada de la paguina (img) -->
+            <section id="img-portada">
                 <div class="smile">
                     <h1>¡Tener una sonrisa hermosa, ahora es posible!</h1>
                     <p>
@@ -42,99 +61,138 @@
                 </div>
             </section>
 
-            <section class="seccion__clinica" >
-                <h2>Clínica SMILE</h2>
-                <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-                    <p>
+            <!-- seccion clinica e img -->
+            <section id="clinica">
+                <article class="img-clinica">
+                    <img src="./assets/images/Clinica.webp" alt="clinica">
+                </article>
+
+                <aside class="clinica__datos">
+                    <div>
+                        <h2>Clinica Smile</h2>
+                        <p>
                             Nos definimos como un centro de excelencia odontológica
                             por nuestro gran equipo de profesionales odontólogos,
                             técnicos y médicos, capacitados para la realización de
                             prestaciones de alta complejidad.
-                    </p><br>
-                    <p>
-                            Once consultorios completamente equipados para las
-                            distintas prestaciones odontológicas. En la actualidad
-                            nuestros pacientes son atendidos bajo protocolos de
-                            bioseguridad internacionales sobre COVID-19
-                    </p><br>
-                    <p>
+                        </p><br>
+                        <p>
                             Laboratorio dental con tecnología digital de última
                             generación CAD-CAM y hornos de porcelana y sintetización
                             de zirconio para la realización de prótesis de porcelana
                             libre de metal.
-                    </p><br>
-                    <p>
+                        </p><br>
+                        <p>
                             Dos salas de limpieza y esterilización con equipamiento
                             completo para procesar gran cantidad de instrumental.
-                    </p>   
-                </div>
-                <form action="./pages/nustra_clinica.html">
-                    <button class="boton_clinica">+Info</button>
-                </form> 
+                        </p><br>
+                        <p>
+                            Once consultorios completamente equipados para las distintas 
+                            prestaciones odontológicas.
+                        </p><br>
+                        <form action="./pages/nustra_clinica.html">
+                            <button type="submit">SABER MÁS</button>
+                        </form><br>
+                    </div>
+                </aside>
+
+                <aside class="clinica__trat">
+                    <h2>Tus odontólogos de confianza en Córdoba</h2><br>
+                    <p>
+                        En Clínica Dental SMILE ponemos a tu disposición toda nuestra profesionalidad y
+                        experiencia en higiene dental, tratamientos de ortodoncia, fundas dentales,
+                        carillas estéticas, implantología, odontología, periodoncia, endodoncia, estética
+                        y blanqueamiento dental.<br><br>
+                        Nuestro equipo, compuesto por una familia de expertos odontólogos de confianza en
+                        Córdoba, dará solución a cualquier problema bucodental de manera práctica y eficaz.
+                        Contamos con profesionales de prestigio especializado. Este capital humano, unido a
+                        la mejor y más punteras instalaciones y técnicas, permiten que estemos siempre a la
+                        vanguardia tecnológica. Todo ello permite que la estancia en la Clínica Dental PCM sea
+                        una experiencia confortable, alejada del estrés y nervios.
+                    </p><br>
+                    <form action="./pages/nustra_clinica.html">
+                        <button type="submit">SABER MÁS</button>
+                    </form><br>                    
+                    <div class="img">
+                        <img src="./assets/icons/dentist (1).svg" alt="img dentista">
+                        <img src="./assets/icons/dental.svg" alt="img libreta">
+                        <img src="./assets/icons/dentist.svg" alt="img dentista">
+                    </div>
+                </aside>
             </section>
 
-            <section class="seccion__clinica--imagen">
-<!-- ver la clase hola -->
-                <div class="hola">
-                    <img src="./assets/images/Clinica.jpg" alt="imagen clinica">
-                </div>
+            <!-- seccion servicios->cartas -->
+            <section id="servicios">
+                    <div class="cartas">
+                        <div class="carta__primera">
+                            <h3>ORTODONCIA</h3>
+                            <form action="./pages/servicios.html#ortodon">
+                                <button type="submit">+Info</button>
+                            </form>
+                        </div>
+                        <div class="carta__Segunda">
+                            <h3>BLANQUEAMIENTO</h3>
+                            <form action="./pages/servicios.html#blanqueamientoS">
+                                <button type="submit">+Info</button>
+                            </form>
+                        </div>
+
+                        <div class="carta__tercera">
+                            <h3>INVISALING</h3>
+                            <form action="./pages/servicios.html#invis">
+                                <button type="submit">+Info</button>
+                            </form>
+                        </div>
+                        <div class="carta__Cuarta">
+                            <h3>ENDODONCIA</h3>
+                            <form action="./pages/servicios.html#endo">
+                                <button type="submit">+Info</button>
+                            </form>
+                        </div>
+
+                        <div class="carta__quinta">
+                            <h3>IMPLANTOLOGÍA</h3>
+                            <form action="./pages/servicios.html#implant">
+                                <button type="submit">+Info</button>
+                            </form>
+                        </div>
+                        <div class="carta__sexta">
+                            <h3>CARILLAS</h3>
+                            <form action="./pages/servicios.html#carillasS">
+                                <button type="submit">+Info</button>
+                            </form>
+                        </div>
+                    </div>
             </section>
         </main>
 
-        <aside id="nuestros-servicios">
-
-            <h2 data-aos="fade-up" data-aos-duration="3000">NUESTROS SEVICIOS</h2>
-            <div class="carta">
-                <div class="carta__primera">
-                    <h3>ORTODONCIA</h3>
-                    <p>La ortodoncia es una especialidad de la odontología que se encarga de todo el estudio, prevención, diagnóstico y tratamiento de las anomalías de forma, posición, relación y función de las estructuras dentomaxilofaciales.</p>
-                    <form action="./pages/servicios.html">
-                        <button>+Info</button>
-                    </form>
-                </div>
-    
-                <div class="carta__Segunda">
-                    <h3>BLANQUEAMIENTO</h3>
-                    <p>Procedimiento para preservar las piezas dentales dañadas, evitando su pérdida.</p>
-                    <form action="./pages/servicios.html">
-                        <button>+Info</button>
-                    </form>
-                </div>
-            
-                <div class="carta__tercera">
-                    <h3>IMPLANTOLOGIA</h3>
-                    <p>Reemplazo de dientes perdidos mediante la colocación quirúrgica de un implante en el maxilar o la mandíbula, que permite la unificación con el hueso.</p>
-                    <form action="./pages/servicios.html">
-                        <button>+Info</button>
-                    </form>
-                </div>
-            </div>
-        </aside>
-
         <footer>
-            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="datosClinica ">
+            <div class="datosClinica" data-aos="fade-up" data-aos-duration="3000">
                 <p>Dirección:Av. Meeks 71, 1º piso, Lomas de Zamora,Bs As, Argentina</p><br>
                 <p>telefono:(011) 4292 - 3574 / 4245 - 2901 / 2747</p><br>
                 <p>Horarios:Lunes a viernes de 10:00 a 18:00 hs</p><br>
                 <p>Mail:recepcion@odontologiail.com.ar</p><br>
             </div>
-
-            <div>
-                <li>
-                    <a href="https://www.facebook.com/clinicasmilepuntadeleste" target="_blank">
-                        <img src="./assets/images/logoface-removebg-preview.png" alt="logoFace">
-                    </a>
-                    <a href="https://www.instagram.com/smile_clinica_dental/" target="_blank">
-                        <img src="./assets/images/logo_insta-removebg-preview.png" alt="logoInsta">
-                    </a>
-                    <a href="https://twitter.com/OrtodonciaSMILE" target="_blank">
-                        <img src="./assets/images/twitter-667462_1920.png" alt="logoTw">
-                    </a>
-                </li>
-                <p>&copy;Clinica dental smile 2022 - Aviso Legal - Política de privacidad</p>
+            <!-- redes sociales -->
+            <div class="redes_S">
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/clinicasmilepuntadeleste" rel="noopener" target="_blank">
+                            <img src="./assets/icons/facebook.svg" alt="logoFace">
+                        </a>
+                        <a href="https://www.instagram.com/smile_clinica_dental/" rel="noopener" target="_blank">
+                            <img src="./assets/icons/insta.svg" alt="logoInsta">
+                        </a>
+                        <a href="https://twitter.com/OrtodonciaSMILE" rel="noopener" target="_blank">
+                            <img src="./assets/icons/tw.svg" alt="logoTw">
+                        </a>
+                    </li>
+                </ul>
             </div>
+            <p class="copyR">&copy;Clinica dental smile 2022 - Aviso Legal - Política de privacidad</p>
         </footer>
-    </div> 
+    </div>
+
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>

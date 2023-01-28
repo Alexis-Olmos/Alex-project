@@ -14,7 +14,7 @@ body{
 
 .contenedor{
     width: 100%;
-    max-width: 1400px;
+    max-width: 2560px;
     margin:auto;
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -90,18 +90,18 @@ header a:hover{
 .contenedor main{
     grid-area: main;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,0.75fr) 1.5fr;
     grid-template-rows: repeat(2,auto);
+
     grid-template-areas: 
     "cont cont cont"
     "img img dato";
 }
 
+/* seccion smile */
 main .contenido{
     grid-area: cont;
 }
-
-/* ---------seccion smile--------- */
 
 .contenido{
     height: 70vh;
@@ -111,13 +111,13 @@ main .contenido{
         rgba(0,0,0,0.5)
         )
         ,url(../assets/images/o\ esta.jpg);
-    background-size:cover;
+    background-size: cover ;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
 .contenido .smile{
-    color: white;
+    color: rgb(197, 221, 230);
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -131,12 +131,12 @@ main .contenido{
 .contenido .smile p{
     font-size: 1.5em;
 }
-/* ---------seccion clinica ----------- */
 
+/* seccion clinica */
 main .seccion__clinica{
     text-align: center;
     grid-area: dato;
-    padding: 20px;
+    margin: 20px 40px 30px 40px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -149,8 +149,6 @@ main .seccion__clinica{
     flex-direction: column;
     text-align: left;
     align-items: flex-start;
-    justify-content: left;
-    max-width: 100%;
     height: auto;
 }
 
@@ -169,10 +167,14 @@ main .seccion__clinica{
 main .seccion__clinica--imagen{
     grid-area: img;
     display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .seccion__clinica--imagen div{
-    margin: 40px;
+    margin: 40px 20px 40px 20px;
     display: flex;
 }
 
@@ -277,6 +279,7 @@ footer{
 }
 
 footer  p{
+    font-size: 0.8em;
     margin-right: 20px;
     display: flex;
     flex-direction: row;
@@ -466,7 +469,7 @@ footer .datosClinica{
 /* ___________________________obra social____________________________ */
 .contenedor__obra-social{
     width: 100%;
-    max-width: 1400px;
+    max-width: 2560px;
     height: 100%;
     margin:auto;
     grid-area: main;
@@ -662,6 +665,11 @@ footer .datosClinica{
         "dato"
         "img";
     }
+
+    .seccion__clinica--imagen div img{
+        width: 700px;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -680,6 +688,13 @@ footer .datosClinica{
         ;
     }
 
+    nav ul li{
+        font-size: 0.8em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .contenedor main{
         grid-area: main;
         display: grid;
@@ -695,14 +710,9 @@ footer .datosClinica{
         font-size: 0.7em;
     }
 
-
-    nav ul li{
-        font-size: 0.8em;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .seccion__clinica--imagen div img{
+        width: 500px;
     }
-
 /* ---------mediaqueries obra social----------- */
     .contenedor__obra-social{
         grid-area: main;
@@ -766,7 +776,7 @@ footer .datosClinica{
 @media screen and (max-width: 480px) {
 
     footer  p{
-        font-size: 0.8em;
+        font-size: 0.65em;
         display: flex;
         flex-direction: row;
         text-align: center;
